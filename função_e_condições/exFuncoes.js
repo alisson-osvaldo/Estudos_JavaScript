@@ -47,3 +47,19 @@ console.log('EXERCICIO  05 :')
     }
 }
 console.log(fatorial(5))
+
+//------------------------------------------------
+console.log('EXEMPLO OBJETO: ')
+let amigo = {
+    nome: 'José', 
+    sexo: 'M', 
+    pesoAtual: 85.4, 
+    engordar(p=0){
+        let pesava = amigo.pesoAtual
+        console.log('Engordou')
+        this.pesoAtual += p
+        console.log(`${amigo.nome} pesava: ${pesava}Kg`)
+    }}
+    amigo.engordar(2)
+    
+    console.log(`${amigo.nome} pesa atualmente: ${amigo.pesoAtual}Kg`)
